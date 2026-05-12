@@ -1,6 +1,5 @@
 import React from 'react';
-/* 
-  Ensure your images are in the src/assets folder.
+/* Ensure your images are in the src/assets folder.
   Double-check that the file is spelled 'certeficate.jpg' in your folder.
 */
 import profileImg from './assets/profile.jpg'; 
@@ -25,17 +24,17 @@ const Portfolio = () => {
         <div>
           <span className="text-[#22d3ee] font-mono mb-4 block tracking-widest uppercase">Selamawit Mesfin</span>
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-            Junior Web Developer & <span className="text-[#10b981]">IS Student.</span>
+            Frontend <span className="text-[#10b981]">Developer</span> & UI/UX Enthusiast.
           </h1>
           <p className="text-lg text-slate-400 max-w-lg mb-8 leading-relaxed">
-            3rd Year Information Systems student at Bahir Dar University with a 3.32 CGPA. 
-            I build impactful web applications and management systems.
+            3rd Year Information Systems student at Bahir Dar University. 
+            I craft intuitive, high-performance user interfaces and digital experiences 
+            that bridge the gap between design and code.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#projects" className="bg-[#22d3ee] text-[#0a192f] px-8 py-4 rounded-full font-bold shadow-[0_0_45px_rgba(34,211,238,0.18)] hover:scale-105 transition-transform">
               View Work
             </a>
-            {/* Added Resume Download Button */}
             <a 
               href="/Selamawit_Mesfin_CV.pdf" 
               download 
@@ -63,15 +62,14 @@ const Portfolio = () => {
       <section id="about" className="py-24 px-8 border-t border-slate-800/50">
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="bg-slate-900/50 p-12 rounded-3xl border border-slate-800 shadow-[0_0_45px_rgba(34,211,238,0.05)]">
-            <h2 className="text-2xl font-bold mb-6 text-[#22d3ee]">Technical Mission</h2>
+            <h2 className="text-2xl font-bold mb-6 text-[#22d3ee]">Frontend Vision</h2>
             <p className="text-lg leading-relaxed text-slate-300">
-              I specialize in developing management systems for the hospitality and 
-              agricultural sectors using C#, SQL, and .NET 10. My current focus is 
-              improving sesame and soya bean export tracking through digital tools.
+              I specialize in creating user-centered web applications using **React** and **Next.js**. 
+              My goal is to digitize complex processes in the agricultural and business sectors 
+              through clean design and seamless interactions.
             </p>
           </div>
 
-          {/* New Extracurricular Section */}
           <div className="bg-slate-900/50 p-12 rounded-3xl border border-slate-800">
             <h2 className="text-2xl font-bold mb-6 text-[#10b981]">Beyond Code</h2>
             <ul className="space-y-4 text-slate-300">
@@ -99,19 +97,19 @@ const Portfolio = () => {
           <ProjectCard 
             title="ምርት Tech" 
             tech="Next.js + Supabase" 
-            desc="Agricultural marketplace connecting Ethiopian farmers and buyers." 
+            desc="Agricultural marketplace connecting Ethiopian farmers and buyers with a real-time UI." 
             link="https://mirt-tech-2fop.vercel.app/"
           />
           <ProjectCard 
             title="ምርጥ ጣዕም" 
             tech="React + Tailwind" 
-            desc="Traditional catering marketplace for fresh Ethiopian dishes." 
+            desc="Traditional catering marketplace for fresh Ethiopian dishes with an interactive ordering flow." 
             link="https://mirt-taem-frontend.vercel.app"
           />
           <ProjectCard 
-            title="Inventory Pro" 
-            tech="C# + .NET 10" 
-            desc="Desktop management system with dashboard and full CRUD functionality." 
+            title="Inventory Dashboard" 
+            tech="React + System Design" 
+            desc="Clean, functional interface for tracking exports and business logistics." 
             link="#" 
           />
         </div>
